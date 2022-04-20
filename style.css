@@ -17,6 +17,11 @@ body {
   align-items: center;
   padding: 0px 51px;
   height: 64px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
 }
 
 .topheader a {
@@ -130,7 +135,8 @@ body {
 .card-footer {
   display: flex;
   height: 37px;
-  padding: 10px 15px;
+  padding: 0px 15px;
+  padding-bottom: 10px;
   justify-content: space-between;
   align-items: center;
   border: 1px solid #dbdbdb;
@@ -140,18 +146,22 @@ body {
 }
 
 .card-like::before {
+  position: relative;
+  top: 5px;
   content: "";
   display: inline-block;
   width: 14px;
   height: 18px;
   padding-right: 10px;
   background: url("img/Ei-like.svg");
-  background-position-y: center;
+  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .card-comment::before {
+  position: relative;
+  top: 5px;
   content: "";
   display: inline-block;
   width: 17px;
